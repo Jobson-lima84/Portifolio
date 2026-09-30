@@ -12,7 +12,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* MUDANÇA: Colocado no * para aplicar a todos os elementos e evitar estouro de largura */
+    box-sizing: border-box;
+    /* MUDANÇA: Colocado no * para aplicar a todos os elementos e evitar estouro de largura */
 }
 
 body {
@@ -66,7 +67,8 @@ main {
     font-family: var(--fontePrincipal);
     color: var(--corTerciaria);
     font-size: 16px;
-    font-weight: 400; /* MUDANÇA: Corrigido de 1 para 400 (peso normal do font-weight) */
+    font-weight: 400;
+    /* MUDANÇA: Corrigido de 1 para 400 (peso normal do font-weight) */
     text-align: justify;
 }
 
@@ -80,16 +82,18 @@ main {
 }
 
 /* MUDANÇA: Estilo dos botões <a> restaurado e aprimorado */
-.container-texto-link{
+.container-texto-link {
     background-color: var(--corPrincipal);
     border: solid 2px var(--corPrincipal);
     border-radius: 16px;
-    padding: 16px 32px; /* MUDANÇA: Reduzido levemente o padding para caber melhor no layout */
+    padding: 16px 32px;
+    /* MUDANÇA: Reduzido levemente o padding para caber melhor no layout */
     color: var(--corSecundaria);
     font-size: 20px;
     font-family: var(--fontePrincipal);
     font-weight: 600;
-    text-decoration: none; /* MUDANÇA: Adicionado para remover o sublinhado padrão dos links */
+    text-decoration: none;
+    /* MUDANÇA: Adicionado para remover o sublinhado padrão dos links */
     display: inline-block;
     text-align: center;
     transition: 0.3s;
@@ -144,7 +148,8 @@ footer {
     }
 
     main {
-        flex-direction: column-reverse; /* Coloca a imagem no topo e o texto abaixo no mobile */
+        flex-direction: column-reverse;
+        /* Coloca a imagem no topo e o texto abaixo no mobile */
         padding: 10% 5%;
         gap: 40px;
     }
@@ -160,7 +165,8 @@ footer {
     }
 
     .container-foto img {
-        max-width: 220px; /* Garante tamanho ideal para foto de perfil no celular */
+        max-width: 220px;
+        /* Garante tamanho ideal para foto de perfil no celular */
     }
 
     .container-texto-titulo {
@@ -172,10 +178,13 @@ footer {
     }
 
     /* MUDANÇA: Empilha os botões na vertical no celular */
-    .container-texto-link {
+    .container-texto-botoes {
+        display: flex;
         flex-direction: column;
-        width: 100%;
+        /* Coloca um botão abaixo do outro */
         gap: 16px;
+        /* Ajuste o espaçamento como preferir */
+        align-items: center;
     }
 
     /* MUDANÇA: Botões ocupam a largura total do container no celular */
